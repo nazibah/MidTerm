@@ -34,7 +34,7 @@ public class ConnectToSqlDB {
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
-        String userName = prop.getProperty("MYSQLJDBC.userName");
+        String userName = prop.getProperty("MYSQLJDBC.user");
         String password = prop.getProperty("MYSQLJDBC.password");
         Class.forName(driverClass);
         connect = DriverManager.getConnection(url,userName,password);
