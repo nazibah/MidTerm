@@ -3,9 +3,7 @@ package string.problems;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by mrahman on 04/22/17.
- */
+
 public class DuplicateWord {
 
     public static void main(String[] args) {

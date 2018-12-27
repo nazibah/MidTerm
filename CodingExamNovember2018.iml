@@ -57,7 +57,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/driver/mysql-connector-java-6.0.6-bin.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.41-bin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -66,12 +66,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.13.jar!/" />
+          <root url="jar://$MODULE_DIR$/driver/mysql-connector-java-8.0.13.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.13" level="project" />
   </component>
 </module>

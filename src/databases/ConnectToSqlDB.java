@@ -1,5 +1,6 @@
 package databases;
 
+import json.parser.NewsDataModel;
 import parser.Student;
 
 import java.io.FileInputStream;
@@ -24,7 +25,7 @@ public class ConnectToSqlDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("/Users/nazibahfariha/MidtermNovember2018/src/secret.properties");
+        InputStream ism = new FileInputStream("src/secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -34,7 +35,7 @@ public class ConnectToSqlDB {
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
-        String userName = prop.getProperty("MYSQLJDBC.user");
+        String userName = prop.getProperty("MYSQLJDBC.userName");
         String password = prop.getProperty("MYSQLJDBC.password");
         Class.forName(driverClass);
         connect = DriverManager.getConnection(url,userName,password);
@@ -106,12 +107,12 @@ public class ConnectToSqlDB {
         }
     }
 
-    public void insertDataFromStringToSqlTable(String ArrayData, String tableName, String columnName)
+    public void insertDataFromStringToSqlTable(List<NewsDataModel> ArrayData, String tableName, String columnName)
     {
         try {
             connectToSqlDatabase();
             ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
-            ps.setString(1,ArrayData);
+            ps.setString(1, String.valueOf(ArrayData));
             ps.executeUpdate();
         } catch (IOException e) {
             e.printStackTrace();
@@ -166,10 +167,10 @@ public class ConnectToSqlDB {
     {
         try {
             connectToSqlDatabase();
-                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
-                ps.setString(1,"Ankita Sing");
-                ps.setInt(2,3590);
-                ps.executeUpdate();
+            ps = connect.prepareStatement("INSERT INTO "+tableName+" ( " + columnName1 + "," + columnName2 + " ) VALUES(?,?)");
+            ps.setString(1,"Ankita Sing");
+            ps.setInt(2,3590);
+            ps.executeUpdate();
 
 
         } catch (IOException e) {
