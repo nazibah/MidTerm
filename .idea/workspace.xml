@@ -258,7 +258,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="432" />
     <option name="y" value="23" />
     <option name="width" value="1008" />
@@ -333,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545704411806" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545901343519" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -357,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CNNApi">
+  <component name="RunManager" selected="Application.UnitTestingMath">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -371,20 +371,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="json.parser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindLowestDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="math.problems.FindLowestDifference" />
-      <module name="CodingExamNovember2018" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -434,6 +420,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnitTestingMath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.problems.UnitTestingMath" />
+      <module name="CodingExamNovember2018" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -465,18 +465,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CNNApi" />
-      <item itemvalue="Application.FindLowestDifference" />
       <item itemvalue="Application.LowestNumber" />
       <item itemvalue="Application.Pattern" />
       <item itemvalue="Application.PrimeNumber" />
+      <item itemvalue="Application.UnitTestingMath" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UnitTestingMath" />
         <item itemvalue="Application.CNNApi" />
         <item itemvalue="Application.PrimeNumber" />
         <item itemvalue="Application.Pattern" />
         <item itemvalue="Application.LowestNumber" />
-        <item itemvalue="Application.FindLowestDifference" />
       </list>
     </recent_temporary>
   </component>
